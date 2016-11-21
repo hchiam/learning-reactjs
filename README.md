@@ -1,4 +1,4 @@
 # reactjsSandbox
 My React.js sandbox.
 
-YouTube Tutorial: [https://www.youtube.com/watch?v=MhkGQAoc7bc](https://www.youtube.com/watch?v=MhkGQAoc7bc)
+[LearnCode.academy tutorial on YouTube](https://www.youtube.com/watch?v=MhkGQAoc7bc)
