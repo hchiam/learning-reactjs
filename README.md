@@ -1,6 +1,8 @@
 # reactjsSandbox
 My React.js sandbox.
 
+Create components in JavaScript using React.js.
+
 # tutorial 1:
 http://tutorialzine.com/2014/07/5-practical-examples-for-learning-facebooks-react-framework/
 
