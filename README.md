@@ -15,6 +15,9 @@ ReactDOM.render(
 );
 `
 
+# tutorial 0.5:
+http://stackoverflow.com/questions/34737898/a-simple-hello-world-in-react-js-not-working
+
 # tutorial 1:
 [LearnCode.academy tutorial on YouTube](https://www.youtube.com/watch?v=MhkGQAoc7bc)
 
