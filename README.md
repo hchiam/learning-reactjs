@@ -3,15 +3,33 @@ My React.js sandbox.
 
 Create components in JavaScript using React.js.
 
+# tutorial 0:
+http://codepen.io/gaearon/pen/ZpvBNJ
+
+Shortest React example:
+
+`
+ReactDOM.render(
+    <h1>Hello, world!</h1>,
+    document.getElementById('root')
+);
+`
+
 # tutorial 1:
-http://tutorialzine.com/2014/07/5-practical-examples-for-learning-facebooks-react-framework/
+[LearnCode.academy tutorial on YouTube](https://www.youtube.com/watch?v=MhkGQAoc7bc)
 
 # tutorial 2:
-[LearnCode.academy tutorial on YouTube](https://www.youtube.com/watch?v=MhkGQAoc7bc)
+http://tutorialzine.com/2014/07/5-practical-examples-for-learning-facebooks-react-framework/
+
+and
+
+https://facebook.github.io/react/docs/hello-world.html
 
 Facebook provides a direct link to its React JS file (and its React object and its methods) that you can embed in your HTML file:
 
     <script src="http://fb.me/react-0.10.0.min.js"></script>
+
+Then you can call `React.createClass()` with an object of options and methods. 
 
 It's recommended (but not required) to use the JSX dialect of JS (JavaScript) to write React web apps.
 
