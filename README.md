@@ -18,6 +18,8 @@ ReactDOM.render(
 # tutorial 0.5:
 http://stackoverflow.com/questions/34737898/a-simple-hello-world-in-react-js-not-working
 
+https://codepen.io/hchiam/pen/jmxVzV
+
 # tutorial 1:
 [LearnCode.academy tutorial on YouTube](https://www.youtube.com/watch?v=MhkGQAoc7bc)
 
@@ -37,3 +39,15 @@ Then you can call `React.createClass()` with an object of options and methods.
 It's recommended (but not required) to use the JSX dialect of JS (JavaScript) to write React web apps.
 
 If you do use JSX, then:  JSX --(compile)--> JS (for browser to interpret)
+
+# More of My Own Reworked Examples:
+
+http://codepen.io/hchiam/pen/LymLzP (vs a pure html version: http://codepen.io/hchiam/pen/jmxVzV)
+
+http://codepen.io/hchiam/pen/ybjXPE?editors=1010
+
+## Reworked Forks:
+
+http://codepen.io/hchiam/pen/YVLrBb
+
+http://codepen.io/hchiam/pen/rmvGgd
