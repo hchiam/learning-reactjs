@@ -1,5 +1,6 @@
 # reactjsSandbox
-My React.js sandbox.
+
+My React.js sandbox. I'm learning React.
 
 Create components in JavaScript using React.js.
 
