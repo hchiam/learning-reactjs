@@ -1,0 +1,91 @@
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
+    <!--Need this JSX Transformer to convert to JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="clock"></div>
+    <div id="compo"></div>
+    <div id='notes'></div>
+    
+    <script type="text/jsx">
+        const user = {
+          firstName: 'Howard',
+          lastName: 'Chiam',
+          url: 'https://github.com/hchiam'
+        };
+        
+        function formatName(user) {
+          return user.firstName + ' ' + user.lastName;
+        }
+        
+        const htmlStuff = (
+          <div>
+            <h1>
+              Hello, {formatName(user)}!
+            </h1>
+            <a href={user.url} target="_blank">{user.url}</a>
+          </div>
+        );
+        
+        ReactDOM.render(
+          htmlStuff,
+          document.getElementById('root')
+        );
+        
+        /*---------------------------------*/
+        
+        function clock() {
+          const element = (
+            <div>
+              <p><b>Time: {new Date().toLocaleTimeString()}</b></p>
+            </div>
+          );
+          ReactDOM.render(
+            element,
+            document.getElementById("clock")
+          );
+        }
+        
+        setInterval(clock, 1000);
+        
+        /*---------------------------------*/
+        
+        function ComponentName(propsVar) {
+          return <p><i>Hey, {propsVar.name}. {propsVar.msg}</i></p>;
+        }
+        
+        const element = <ComponentName name="you" msg='This is a Component. Both function and XML-like names must start with a capital letter' />;
+        
+        ReactDOM.render(
+          element,
+          document.getElementById('compo')
+        );
+        
+        /*---------------------------------*/
+        
+        function TemplateNote(info) {
+          return <li> * {info.note}</li>;
+        }
+        
+        function Notes() {
+          return (
+            <ul>
+              <TemplateNote note='Use Babel JS preprocessor.'/>
+              <TemplateNote note='Import react.min.js (see settings).'/>
+              <TemplateNote note='Import react-dom.min.js (see settings).'/>
+            </ul>
+          );
+        }
+        
+        ReactDOM.render(
+          <div>
+            <h1>Notes:</h1>
+            <Notes/>
+          </div>,
+          document.getElementById('notes')
+        );
+    </script>
+</body>
