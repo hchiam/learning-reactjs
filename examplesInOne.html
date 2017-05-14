@@ -37,14 +37,19 @@
         
         /*---------------------------------*/
         
+        class Clock extends React.Component {
+          render() {
+            return (
+              <div>
+                <p><b>Time: {new Date().toLocaleTimeString()}</b></p>
+              </div>
+            );
+          }
+        }
+        
         function clock() {
-          const element = (
-            <div>
-              <p><b>Time: {new Date().toLocaleTimeString()}</b></p>
-            </div>
-          );
           ReactDOM.render(
-            element,
+            <Clock/>,
             document.getElementById("clock")
           );
         }
