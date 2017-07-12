@@ -2,6 +2,8 @@
 
 Create components in JavaScript using React.js.
 
+Just on of the things I'm learning. https://github.com/hchiam/learning
+
 # tutorial 0:
 http://codepen.io/gaearon/pen/ZpvBNJ
 
