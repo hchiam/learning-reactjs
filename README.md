@@ -4,6 +4,8 @@ Create components in JavaScript using React.js.
 
 Just one of the things I'm learning. https://github.com/hchiam/learning
 
+(Update: you can [create a React web app by running one command](https://github.com/hchiam/create-react-app).)
+
 # tutorial 0:
 http://codepen.io/gaearon/pen/ZpvBNJ
 
