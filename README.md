@@ -6,7 +6,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 (Update: you can [create a React web app by running one command](https://github.com/hchiam/create-react-app).)
 
-## [New](https://github.com/hchiam/learning-reactjs/tree/master/new)
+## New
 
 https://reactjs.org/docs/hello-world.html
 
@@ -14,7 +14,7 @@ https://reactjs.org/tutorial/tutorial.html
 
 https://www.freecodecamp.org/learn/front-end-libraries/react/
 
-## Old
+## [Old](https://github.com/hchiam/learning-reactjs/tree/master/new)
 
 ### tutorial 0:
 http://codepen.io/gaearon/pen/ZpvBNJ
