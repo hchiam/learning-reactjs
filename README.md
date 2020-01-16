@@ -8,11 +8,11 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 ## New
 
-https://reactjs.org/docs/hello-world.html
+<https://reactjs.org/docs/hello-world.html>
 
-https://reactjs.org/tutorial/tutorial.html
+<https://reactjs.org/tutorial/tutorial.html>
 
-https://www.freecodecamp.org/learn/front-end-libraries/react/
+<https://www.freecodecamp.org/learn/front-end-libraries/react>
 
 ## [Old](https://github.com/hchiam/learning-reactjs/tree/master/new)
 
