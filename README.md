@@ -6,7 +6,17 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 (Update: you can [create a React web app by running one command](https://github.com/hchiam/create-react-app).)
 
-# tutorial 0:
+## New
+
+https://reactjs.org/docs/hello-world.html
+
+https://reactjs.org/tutorial/tutorial.html
+
+https://www.freecodecamp.org/learn/front-end-libraries/react/
+
+## Old
+
+### tutorial 0:
 http://codepen.io/gaearon/pen/ZpvBNJ
 
 Shortest React example:
@@ -18,15 +28,15 @@ ReactDOM.render(
 );
 `
 
-# tutorial 0.5:
+### tutorial 0.5:
 http://stackoverflow.com/questions/34737898/a-simple-hello-world-in-react-js-not-working
 
 https://codepen.io/hchiam/pen/jmxVzV
 
-# tutorial 1:
+### tutorial 1:
 [LearnCode.academy tutorial on YouTube](https://www.youtube.com/watch?v=MhkGQAoc7bc)
 
-# tutorial 2:
+### tutorial 2:
 http://tutorialzine.com/2014/07/5-practical-examples-for-learning-facebooks-react-framework/
 
 and
@@ -43,26 +53,22 @@ It's recommended (but not required) to use the JSX dialect of JS (JavaScript) to
 
 If you do use JSX, then:  JSX --(compile)--> JS (for browser to interpret)
 
-# tutorial 3:
+### tutorial 3:
 
 FCC: https://github.com/hchiam/chat-app-fcc-react-redux
 
-# More of My Own Reworked Examples:
+### More of My Own Reworked Examples:
 
 http://codepen.io/hchiam/pen/LymLzP (vs a pure html version: http://codepen.io/hchiam/pen/jmxVzV)
 
 http://codepen.io/hchiam/pen/ybjXPE?editors=1010
 
-## Reworked Forks:
+#### Reworked Forks:
 
 http://codepen.io/hchiam/pen/YVLrBb
 
 http://codepen.io/hchiam/pen/rmvGgd
 
-# All My React Codepens (Forks Included):
+### All My React Codepens (Forks Included):
 
 https://codepen.io/search/pens/?q=react&limit=hchiam&show_forks=true
-
-# You might also like:
-
-https://github.com/facebook/create-react-app
