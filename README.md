@@ -6,7 +6,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 (Update: you can [create a React web app by running one command](https://github.com/hchiam/create-react-app).)
 
-## New
+## [New](https://github.com/hchiam/learning-reactjs/tree/master/new)
 
 https://reactjs.org/docs/hello-world.html
 
