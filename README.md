@@ -43,6 +43,10 @@ It's recommended (but not required) to use the JSX dialect of JS (JavaScript) to
 
 If you do use JSX, then:  JSX --(compile)--> JS (for browser to interpret)
 
+# tutorial 3:
+
+FCC: https://github.com/hchiam/chat-app-fcc-react-redux
+
 # More of My Own Reworked Examples:
 
 http://codepen.io/hchiam/pen/LymLzP (vs a pure html version: http://codepen.io/hchiam/pen/jmxVzV)
@@ -58,3 +62,7 @@ http://codepen.io/hchiam/pen/rmvGgd
 # All My React Codepens (Forks Included):
 
 https://codepen.io/search/pens/?q=react&limit=hchiam&show_forks=true
+
+# You might also like:
+
+https://github.com/facebook/create-react-app
