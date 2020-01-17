@@ -18,8 +18,29 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 ### Coming from AngularJS?
 
-`ng-if`? -> JavaScript `if` or ternary!
-`ng-for`? -> JavaScript loop or `map`!
+`ng-if`? -> JavaScript `if`/ternary or embedded shorthand `{isTrue && <p>show this</p>}` or `return null`
+
+`ng-for`? -> JavaScript loop or `map` (for example: `numbers.map((n) => <li>{n}</li>);`)
+
+You can even do this:
+```js
+const numbers = [1, 2, 3, 4, 5];
+const listItems = numbers.map((number) =>
+  <li>{number}</li>
+);
+ReactDOM.render(
+  <ul>{listItems}</ul>, // <ul> an array of <li>#</li>'s
+  document.getElementById('root')
+);
+```
+
+### Passing arguments to event handlers
+
+```html
+<!-- parameters will be extraParameter and e (implicit with bind) -->
+<button onClick={(e) => this.handleClick(extraParameter, e)}>Do something</button>
+<button onClick={this.handleClick.bind(this, extraParameter)}>Do something</button>
+```
 
 ## [Old](https://github.com/hchiam/learning-reactjs/tree/master/new)
 
