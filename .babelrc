@@ -1,0 +1,9 @@
+{
+  "presets": [
+    "@babel/preset-react"
+  ],
+  "ignore": [
+    ".eslintrc.js",
+    "*.test.js"
+  ]
+}

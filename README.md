@@ -1,6 +1,6 @@
 # Learning React.js
 
-Create components in JavaScript using React.js.
+Create components in JavaScript using React. Conceptually, [rendering logic and other UI logic are closely coupled](https://reactjs.org/docs/introducing-jsx.html).
 
 Just one of the things I'm learning. https://github.com/hchiam/learning
 
@@ -12,7 +12,14 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 <https://reactjs.org/tutorial/tutorial.html>
 
+- <https://codepen.io/hchiam/pen/BayOeZo?editors=0010>
+
 <https://www.freecodecamp.org/learn/front-end-libraries/react>
+
+### Coming from AngularJS?
+
+`ng-if`? -> JavaScript `if` or ternary!
+`ng-for`? -> JavaScript loop or `map`!
 
 ## [Old](https://github.com/hchiam/learning-reactjs/tree/master/new)
 
