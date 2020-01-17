@@ -1,3 +1,6 @@
+// npm run build
+// -> dist/index.js
+
 class Clock extends React.Component {
   constructor(props) { // 1
     super(props);
