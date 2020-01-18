@@ -67,10 +67,22 @@ class Toggle extends React.Component {
   }
 }
 
+function NumberList(props) {
+  const numbers = props.numbers;
+  const listItems = numbers.map((number) => // note: NO "{" here!
+    <li key={number.toString()}>{number}</li>
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
+}
+
+const numbers = [1, 2, 3, 4, 5];
 ReactDOM.render(
   <div>
     <Clock />
     <Toggle />
+    <NumberList numbers={numbers} />
   </div>,
   document.getElementById('root')
 );

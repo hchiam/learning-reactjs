@@ -16,6 +16,12 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 <https://www.freecodecamp.org/learn/front-end-libraries/react>
 
+### React developer tools
+
+Firefox: <https://addons.mozilla.org/en-US/firefox/addon/react-devtools>
+
+Chrome: <https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi>
+
 ### Coming from AngularJS?
 
 `ng-if`? -> JavaScript `if`/ternary or embedded shorthand `{isTrue && <p>show this</p>}` or `return null`
