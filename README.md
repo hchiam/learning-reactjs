@@ -14,9 +14,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 <https://reactjs.org/docs/hello-world.html>
 
-<https://reactjs.org/tutorial/tutorial.html>
-
-- <https://codepen.io/hchiam/pen/BayOeZo?editors=0010>
+<https://reactjs.org/tutorial/tutorial.html> -> <https://codepen.io/hchiam/pen/BayOeZo?editors=0010>
 
 <https://www.freecodecamp.org/learn/front-end-libraries/react>
 
