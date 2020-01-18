@@ -6,6 +6,8 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 (Update: you can [create a React web app by running one command](https://github.com/hchiam/create-react-app).)
 
+<hr>
+
 ## New
 
 (To try my examples, `npm run build` and _then_ open the html files.)
@@ -111,6 +113,8 @@ function App() {
 }
 ```
 
+<hr>
+
 ## Old
 
 ### tutorial 0:
@@ -169,3 +173,5 @@ http://codepen.io/hchiam/pen/rmvGgd
 ### All My React Codepens (Forks Included):
 
 https://codepen.io/search/pens/?q=react&limit=hchiam&show_forks=true
+
+<hr>
