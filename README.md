@@ -42,6 +42,19 @@ ReactDOM.render(
 );
 ```
 
+### Design thinking process with React
+
+<https://reactjs.org/docs/thinking-in-react.html>
+
+- Good to re-read the above link for details.
+- But general overview:
+  0) [mock/boxes](https://reactjs.org/docs/thinking-in-react.html#start-with-a-mock)
+  1) [hierarchy/"tabs"](https://reactjs.org/docs/thinking-in-react.html#step-1-break-the-ui-into-a-component-hierarchy)
+  2) [static version](https://reactjs.org/docs/thinking-in-react.html#step-2-build-a-static-version-in-react) (NO interactivity, so think about state/props later)
+  3) [minimal state representation](https://reactjs.org/docs/thinking-in-react.html#step-3-identify-the-minimal-but-complete-representation-of-ui-state) = {not passed-in prop, changes, not computable} -> (compute the rest)
+  4) [where state should live](https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live) ("shared" state? may need to be in parent -> pass down state and callback as props to children)
+  5) [add inverse data flow](https://reactjs.org/docs/thinking-in-react.html#step-5-add-inverse-data-flow), i.e. pass down state and callbacks as props to children, as identified in previous steps.
+
 ### Passing arguments to event handlers
 
 ```html
