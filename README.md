@@ -48,7 +48,7 @@ ReactDOM.render(
 <button onClick={this.handleClick.bind(this, extraParameter)}>Do something</button>
 ```
 
-## [Old](https://github.com/hchiam/learning-reactjs/tree/master/new)
+## Old
 
 ### tutorial 0:
 http://codepen.io/gaearon/pen/ZpvBNJ
