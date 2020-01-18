@@ -8,7 +8,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 <hr>
 
-## New
+## NEW NOTES
 
 (To try my examples, `npm run build` and _then_ open the html files.)
 
@@ -115,7 +115,7 @@ function App() {
 
 <hr>
 
-## Old
+## OLD NOTES
 
 ### tutorial 0:
 http://codepen.io/gaearon/pen/ZpvBNJ
