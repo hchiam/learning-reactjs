@@ -48,6 +48,7 @@ ReactDOM.render(
 
 - Good to re-read the above link for details.
 - But general overview:
+
   0) [mock/boxes](https://reactjs.org/docs/thinking-in-react.html#start-with-a-mock)
   1) [hierarchy/"tabs"](https://reactjs.org/docs/thinking-in-react.html#step-1-break-the-ui-into-a-component-hierarchy)
   2) [static version](https://reactjs.org/docs/thinking-in-react.html#step-2-build-a-static-version-in-react) (NO interactivity, so think about state/props later)
