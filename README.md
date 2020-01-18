@@ -20,7 +20,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 ### React developer tools
 
-Firefox: <https://addons.mozilla.org/en-US/firefox/addon/react-devtools>
+Firefox: <https://addons.mozilla.org/en-US/firefox/addon/react-devtools> -> open dev tools -> Components tab
 
 Chrome: <https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi>
 
