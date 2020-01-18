@@ -1,6 +1,6 @@
 # Learning React.js
 
-Create components in JavaScript using React. Conceptually, [rendering logic and other UI logic are closely coupled](https://reactjs.org/docs/introducing-jsx.html).
+Create components in JavaScript using React. Conceptually, [rendering logic and other UI logic are closely coupled](https://reactjs.org/docs/introducing-jsx.html). Composition > inheritance. And top-down data flow (but children can change other children/parent's state by calling shared parent's functions that are passed down to them via immutable props).
 
 Just one of the things I'm learning. https://github.com/hchiam/learning
 
@@ -48,6 +48,67 @@ ReactDOM.render(
 <!-- parameters will be extraParameter and e (implicit with bind) -->
 <button onClick={(e) => this.handleClick(extraParameter, e)}>Do something</button>
 <button onClick={this.handleClick.bind(this, extraParameter)}>Do something</button>
+```
+
+### Passing children elements
+
+Special prop `props.children` lets you do this:
+
+```js
+function FancyBorder(props) {
+  return (
+    <div className={'FancyBorder FancyBorder-' + props.color}>
+      <p>Something here.</p>
+      {props.children} {/* you can insert JSX here! */}
+      <p>Something else here.</p>
+    </div>
+  );
+}
+
+function WelcomeDialog() {
+  return (
+    <FancyBorder color="blue">
+
+      {/* you can insert JSX here! */}
+      <h1 className="Dialog-title">
+        Welcome
+      </h1>
+      <p className="Dialog-message">
+        Thank you for visiting our spacecraft!
+      </p>
+      {/* you can insert JSX here! */}
+
+    </FancyBorder>
+  );
+}
+```
+
+If you want custom "holes" in a component, you can do that too:
+
+```js
+function SplitPane(props) {
+  // custom props let you control where the JSX "holes" are!
+  return (
+    <div className="SplitPane">
+      <div className="SplitPane-left">
+        {props.left} {/* you can insert JSX here! */}
+      </div>
+      <div className="SplitPane-right">
+        {props.right} {/* you can insert JSX here! */}
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    {/* custom props let you control where the JSX "holes" are! */}
+    <SplitPane
+      left={<Contacts />}
+      right={<Chat />}
+      />
+  );
+}
 ```
 
 ## Old
