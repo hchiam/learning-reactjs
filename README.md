@@ -8,6 +8,8 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 ## New
 
+(To try my examples, `npm run build` and _then_ open the html files.)
+
 <https://reactjs.org/docs/hello-world.html>
 
 <https://reactjs.org/tutorial/tutorial.html>

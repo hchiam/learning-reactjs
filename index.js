@@ -1,5 +1,5 @@
 // npm run build
-// -> dist/index.js
+// -> dist/index-minified.js
 
 class Clock extends React.Component {
   constructor(props) { // 1

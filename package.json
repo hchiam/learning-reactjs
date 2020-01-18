@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "eslint *.js --max-warnings=0",
     "fix": "eslint --fix *.js",
-    "build": "babel index.js --out-file dist/index.js; npm run minify;",
-    "minify": "minify dist/index.js > dist/index-minified.js",
+    "build": "babel index.js --out-file dist/index.js; babel form.js --out-file dist/form.js; npm run minify;",
+    "minify": "minify dist/index.js > dist/index-minified.js; minify dist/form.js > dist/form-minified.js",
     "test": "jest --passWithNoTests",
     "start": ""
   },
