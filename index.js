@@ -71,6 +71,9 @@ function NumberList(props) {
   const numbers = props.numbers;
   const listItems = numbers.map((number) => // note: NO "{" here!
     <li key={number.toString()}>{number}</li>
+    // keys should be on the list level, not the item level
+    // keys only need to be unique for siblings, don't have to be globally unique
+    // keys don't get passed down to components, so pass props.someIdThing
   );
   return (
     <ul>{listItems}</ul>
