@@ -4,7 +4,7 @@ Create components in JavaScript using React. Conceptually, [rendering logic and 
 
 Just one of the things I'm learning. https://github.com/hchiam/learning
 
-(Update: you can [create a React web app by running one command](https://github.com/hchiam/create-react-app).)
+(Update: you can [create a React web app by running one command](https://github.com/hchiam/create-react-app) or use Yeoman generators like [this](https://www.npmjs.com/package/generator-create-redux-app) or [this](https://www.npmjs.com/package/generator-rn-toolbox).)
 
 <hr>
 
