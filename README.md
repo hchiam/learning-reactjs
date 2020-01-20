@@ -125,6 +125,10 @@ function App() {
 }
 ```
 
+### Other related tools
+
+- [Jest](https://github.com/hchiam/learning-jest)
+
 <hr>
 
 ## OLD NOTES
