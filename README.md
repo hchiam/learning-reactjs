@@ -128,6 +128,7 @@ function App() {
 ### Other related tools
 
 - [Jest](https://github.com/hchiam/learning-jest)
+- [Redux](https://github.com/hchiam/learning-redux)
 
 <hr>
 
