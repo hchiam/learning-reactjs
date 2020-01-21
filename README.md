@@ -125,6 +125,10 @@ function App() {
 }
 ```
 
+### Helpful example of adding data to redux state container
+
+<https://github.com/hchiam/react-jexcel-redux/commit/90db044627780ed6262f5e29bb61a24390a4d4b3>
+
 ### Other related tools
 
 - [Jest](https://github.com/hchiam/learning-jest)
