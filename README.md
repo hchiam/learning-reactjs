@@ -129,6 +129,7 @@ function App() {
 
 - [Jest](https://github.com/hchiam/learning-jest)
 - [Redux](https://github.com/hchiam/learning-redux)
+- [React Native](https://facebook.github.io/react-native/)
 
 <hr>
 
