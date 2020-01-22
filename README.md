@@ -6,6 +6,8 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 (Update: you can [create a React web app by running one command](https://github.com/hchiam/create-react-app) or use Yeoman generators like [this](https://www.npmjs.com/package/generator-create-redux-app) or [this](https://www.npmjs.com/package/generator-rn-toolbox).)
 
+[2020 React cheatsheet (with code examples)](https://www.freecodecamp.org/news/the-react-cheatsheet-for-2020/)
+
 <hr>
 
 ## NEW NOTES
