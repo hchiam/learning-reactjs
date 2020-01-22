@@ -125,6 +125,44 @@ function App() {
 }
 ```
 
+### Higher-order components in React
+
+<https://css-tricks.com/what-are-higher-order-components-in-react/>
+
+```js
+// higher-order component: takes a component and returns a component (in this case, with modified props)
+const hoc = (WrappedComponent) => (props) => {
+  return (
+    <div>
+      <WrappedComponent {...props}>
+        {props.children.toUpperCase()}
+      </WrappedComponent>
+    </div>
+  )
+}
+
+// component to put into the “hoc”:
+const Username = (props) => (
+  <div>{props.children}</div>
+)
+
+// “hoc” being created:
+const UpperCaseUsername = hoc(Username)
+
+// “hoc” being used:
+const App = () => (
+  <div>
+    <UpperCaseUsername>Kingsley</UpperCaseUsername>
+  </div>
+);
+```
+
+### React hooks
+
+May replace higher-order components and nesting.
+
+<https://css-tricks.com/intro-to-react-hooks/>
+
 ### Helpful example of adding data to redux state container
 
 <https://github.com/hchiam/react-jexcel-redux/commit/90db044627780ed6262f5e29bb61a24390a4d4b3>
