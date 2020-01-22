@@ -129,6 +129,10 @@ function App() {
 
 <https://github.com/hchiam/react-jexcel-redux/commit/90db044627780ed6262f5e29bb61a24390a4d4b3>
 
+### Another mini-example
+
+<https://github.com/hchiam/learning-react-2dnote>
+
 ### Other related tools
 
 - [Jest](https://github.com/hchiam/learning-jest)
