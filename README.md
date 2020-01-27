@@ -177,7 +177,7 @@ May replace higher-order components and nesting.
 
 - [Jest](https://github.com/hchiam/learning-jest)
 - [Redux](https://github.com/hchiam/learning-redux)
-- [React Native](https://facebook.github.io/react-native/)
+- [React Native](https://github.com/hchiam/learning-react-native)
 
 <hr>
 
