@@ -165,6 +165,28 @@ May replace higher-order components and nesting.
 
 <https://css-tricks.com/intro-to-react-hooks/>
 
+```js
+componentDidMount() {
+  // A
+}
+
+componentWillUnmount() {
+  // B
+}
+```
+
+[is the same as](https://stackoverflow.com/questions/53464595/how-to-use-componentwillmount-in-react-hooks/53465182#53465182):
+
+```js
+useEffect(() => {
+  // A
+
+  return () => {
+   // B
+  }
+}, [])
+```
+
 ### Helpful example of adding data to redux state container
 
 <https://github.com/hchiam/react-jexcel-redux/commit/90db044627780ed6262f5e29bb61a24390a4d4b3>
