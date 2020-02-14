@@ -195,6 +195,10 @@ useEffect(() => {
 
 <https://github.com/hchiam/learning-react-2dnote>
 
+### Example of React and TDD
+
+<https://github.com/hchiam/learning-react-tdd>
+
 ### Other related tools
 
 - [Jest](https://github.com/hchiam/learning-jest)
