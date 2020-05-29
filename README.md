@@ -191,6 +191,10 @@ useEffect(() => {
 
 <https://github.com/hchiam/react-jexcel-redux/commit/90db044627780ed6262f5e29bb61a24390a4d4b3>
 
+### Auth
+
+Easy solution: <https://github.com/Swizec/useAuth>
+
 ### Another mini-example
 
 <https://github.com/hchiam/learning-react-2dnote>
