@@ -12,7 +12,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 ## NEW NOTES
 
-(To try my examples, `npm run build` and _then_ open the html files.)
+(To try my examples, `npm install && npm run build` and _then_ open the html files.)
 
 <https://reactjs.org/docs/hello-world.html>
 
@@ -33,14 +33,13 @@ Chrome: <https://chrome.google.com/webstore/detail/react-developer-tools/fmkadma
 `ng-for`? -> JavaScript loop or `map` (for example: `numbers.map((n) => <li>{n}</li>);`)
 
 You can even do this:
+
 ```js
 const numbers = [1, 2, 3, 4, 5];
-const listItems = numbers.map((number) =>
-  <li>{number}</li>
-);
+const listItems = numbers.map((number) => <li>{number}</li>);
 ReactDOM.render(
   <ul>{listItems}</ul>, // <ul> an array of <li>#</li>'s
-  document.getElementById('root')
+  document.getElementById("root")
 );
 ```
 
@@ -51,12 +50,12 @@ ReactDOM.render(
 - Good to re-read the above link for details.
 - But general overview:
 
-  0) [mock/boxes](https://reactjs.org/docs/thinking-in-react.html#start-with-a-mock)
-  1) [hierarchy/"tabs"](https://reactjs.org/docs/thinking-in-react.html#step-1-break-the-ui-into-a-component-hierarchy)
-  2) [static version](https://reactjs.org/docs/thinking-in-react.html#step-2-build-a-static-version-in-react) (NO interactivity, so think about state/props later)
-  3) [minimal state representation](https://reactjs.org/docs/thinking-in-react.html#step-3-identify-the-minimal-but-complete-representation-of-ui-state) = {not passed-in prop, changes, not computable} -> (compute the rest)
-  4) [where state should live](https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live) ("shared" state? may need to be in parent -> pass down state and callback as props to children)
-  5) [add inverse data flow](https://reactjs.org/docs/thinking-in-react.html#step-5-add-inverse-data-flow), i.e. pass down state and callbacks as props to children, as identified in previous steps.
+  0. [mock/boxes](https://reactjs.org/docs/thinking-in-react.html#start-with-a-mock)
+  1. [hierarchy/"tabs"](https://reactjs.org/docs/thinking-in-react.html#step-1-break-the-ui-into-a-component-hierarchy)
+  2. [static version](https://reactjs.org/docs/thinking-in-react.html#step-2-build-a-static-version-in-react) (NO interactivity, so think about state/props later)
+  3. [minimal state representation](https://reactjs.org/docs/thinking-in-react.html#step-3-identify-the-minimal-but-complete-representation-of-ui-state) = {not passed-in prop, changes, not computable} -> (compute the rest)
+  4. [where state should live](https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live) ("shared" state? may need to be in parent -> pass down state and callback as props to children)
+  5. [add inverse data flow](https://reactjs.org/docs/thinking-in-react.html#step-5-add-inverse-data-flow), i.e. pass down state and callbacks as props to children, as identified in previous steps.
 
 ### Passing arguments to event handlers
 
@@ -73,7 +72,7 @@ Special prop `props.children` lets you do this:
 ```js
 function FancyBorder(props) {
   return (
-    <div className={'FancyBorder FancyBorder-' + props.color}>
+    <div className={"FancyBorder FancyBorder-" + props.color}>
       <p>Something here.</p>
       {props.children} {/* you can insert JSX here! */}
       <p>Something else here.</p>
@@ -84,16 +83,10 @@ function FancyBorder(props) {
 function WelcomeDialog() {
   return (
     <FancyBorder color="blue">
-
       {/* you can insert JSX here! */}
-      <h1 className="Dialog-title">
-        Welcome
-      </h1>
-      <p className="Dialog-message">
-        Thank you for visiting our spacecraft!
-      </p>
+      <h1 className="Dialog-title">Welcome</h1>
+      <p className="Dialog-message">Thank you for visiting our spacecraft!</p>
       {/* you can insert JSX here! */}
-
     </FancyBorder>
   );
 }
@@ -140,16 +133,14 @@ const hoc = (WrappedComponent) => (props) => {
         {props.children.toUpperCase()}
       </WrappedComponent>
     </div>
-  )
-}
+  );
+};
 
 // component to put into the “hoc”:
-const Username = (props) => (
-  <div>{props.children}</div>
-)
+const Username = (props) => <div>{props.children}</div>;
 
 // “hoc” being created:
-const UpperCaseUsername = hoc(Username)
+const UpperCaseUsername = hoc(Username);
 
 // “hoc” being used:
 const App = () => (
@@ -182,9 +173,9 @@ useEffect(() => {
   // A
 
   return () => {
-   // B
-  }
-}, [])
+    // B
+  };
+}, []);
 ```
 
 ### Helpful example of adding data to redux state container
@@ -214,26 +205,25 @@ Easy solution: <https://github.com/Swizec/useAuth>
 ## OLD NOTES
 
 ### tutorial 0:
+
 http://codepen.io/gaearon/pen/ZpvBNJ
 
 Shortest React example:
 
-`
-ReactDOM.render(
-    <h1>Hello, world!</h1>,
-    document.getElementById('root')
-);
-`
+`ReactDOM.render( <h1>Hello, world!</h1>, document.getElementById('root') );`
 
 ### tutorial 0.5:
+
 http://stackoverflow.com/questions/34737898/a-simple-hello-world-in-react-js-not-working
 
 https://codepen.io/hchiam/pen/jmxVzV
 
 ### tutorial 1:
+
 [LearnCode.academy tutorial on YouTube](https://www.youtube.com/watch?v=MhkGQAoc7bc)
 
 ### tutorial 2:
+
 http://tutorialzine.com/2014/07/5-practical-examples-for-learning-facebooks-react-framework/
 
 and
@@ -244,11 +234,11 @@ Facebook provides a direct link to its React JS file (and its React object and i
 
     <script src="http://fb.me/react-0.10.0.min.js"></script>
 
-Then you can call `React.createClass()` with an object of options and methods. 
+Then you can call `React.createClass()` with an object of options and methods.
 
 It's recommended (but not required) to use the JSX dialect of JS (JavaScript) to write React web apps.
 
-If you do use JSX, then:  JSX --(compile)--> JS (for browser to interpret)
+If you do use JSX, then: JSX --(compile)--> JS (for browser to interpret)
 
 ### tutorial 3:
 

@@ -4,7 +4,7 @@
   "description": "Learning React",
   "main": "index.js",
   "scripts": {
-    "build": "babel index.js --out-file dist/index.js; babel form.js --out-file dist/form.js; npm run minify; babel kinda-shared-state.js --out-file dist/kinda-shared-state.js; npm run minify;",
+    "build": "babel index.js --out-file dist/index.js; babel form.js --out-file dist/form.js; babel kinda-shared-state.js --out-file dist/kinda-shared-state.js; npm run minify;",
     "minify": "minify dist/index.js > dist/index-minified.js; minify dist/form.js > dist/form-minified.js; minify dist/kinda-shared-state.js > dist/kinda-shared-state-minified.js;",
     "test": "jest --passWithNoTests",
     "start": ""
@@ -14,7 +14,7 @@
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-scripts": "^3.4.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",
