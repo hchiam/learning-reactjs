@@ -200,6 +200,16 @@ Easy solution: <https://github.com/Swizec/useAuth>
 - [Redux](https://github.com/hchiam/learning-redux)
 - [React Native](https://github.com/hchiam/learning-react-native)
 
+### Further reading on state organization: "The 5 Types Of React Application State"
+
+<http://jamesknelson.com/5-types-react-application-state>
+
+1. Data
+2. Communication
+3. Control
+4. Session
+5. Location
+
 <hr>
 
 ## OLD NOTES
