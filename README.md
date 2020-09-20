@@ -200,6 +200,7 @@ Easy solution: <https://github.com/Swizec/useAuth>
 - [Redux](https://github.com/hchiam/learning-redux)
 - [React Native](https://github.com/hchiam/learning-react-native)
 - [React + Apollo + GraphQL](https://github.com/hchiam/learning-react-apollo)
+- [React + Firestore](https://github.com/hchiam/learning-firestore)
 
 ### Further reading on state organization: "The 5 Types Of React Application State"
 
