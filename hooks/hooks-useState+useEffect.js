@@ -7,9 +7,13 @@ function App() {
 
   // useEffect: (run stuff when create/update/destroy component)
   useEffect(() => {
+    // stuff inside useEffect is like onCreate/onUpdate
     setName({ firstName: "Shedrack", surname: "Akintayo" });
     setTitle("My Full Name");
-  }, []);
+    return () => {
+      // stuff inside return inside useEffect is like onDestroy
+    };
+  }, []); // <-- if anything in this array changes, then useEffect runs again (empty array = run x1 once component mounted)
 
   return (
     <div>

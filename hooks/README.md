@@ -28,17 +28,154 @@
 
 ## Others
 
-- `useCallback`
-- `useMemo`
-- `useRef`
+- `useCallback` = useMemo but for _callback functions_ to not be recreated per re-render
+- `useMemo` = useCallback but for _data_ to not have to repeat evaluation per re-render
+- `useRef` = ref to an element upon mount
+- `createContext` and `useContext(ContextName)` = to avoid props drilling
+- `useReducer` = for state across app (use useState for local component state)
 - `useImperativeHandle`
 - `useLayoutEffect`
 - `useDebugValue`
 
 ## You can also create a custom React hook
 
-- `use...`
+- Why? To share logic between components (vs. copy-paste-ing useEffect code innards into a bunch of components) without needing to create components (Higher-Order Components) or pass props.
+
+- "`use...`"
 
 - <https://github.com/hacktivist123/React-Hooks-Project/blob/custom-hooks/src/useInfiniteScroll.js>
 
-- See example: `cd custom-test && npm install && npm start;` and notice the scrollbar changing size.
+- See example: `cd custom-hook-working-example && npm install && npm start;` and notice the scrollbar changing size.
+
+## More hooks
+
+- `useCallback` = useMemo but for _callback functions_ to not be recreated per re-render
+
+  ```jsx
+  function Timer() {
+    const [time, setTime] = useState();
+    const [count, setCount] = useState(0);
+
+    const inc = useCallback( // <--
+      // inc callback is initialized as handleIncrementCount callback function:
+      function handleIncrementCount() {
+        setCount((prevCount) => prevCount + 1);
+      },
+      // second parameter of useCallback is dependencies array: (to decide whether to re-run useCallback)
+      [setCount] // we avoid re-creating because setCount won't change (because it happens to be a hook)
+    );
+
+    useEffect(() => {
+      // setTimeout sets time, triggering -> useEffect -> re-render -> but NOT re-create inc callback
+      const timeout = setTimeout(() => {
+        const currentTime = JSON.stringify(new Date(Date.now()));
+        setTime(currentTime);
+      }, 300);
+
+      return (
+        <div>
+          <p>Current time: {time}</p>
+          <p>Count: {count}</p>
+          <button onClick={inc}>+</button> <!-- !!! -->
+        </div>
+      );
+    });
+  }
+  ```
+
+- `useMemo` = useCallback but for _data_ to not have to repeat evaluation per re-render
+
+  ```js
+  const output = useMemo(() => getFibonacci(inputDep), [inputDep]); // memoize: input -> output
+  ```
+
+- `useRef` = ref to an element upon mount
+
+  ```jsx
+  function App() {
+    const [query, setQuery] = useState("react hooks");
+
+    const searchInput = useRef(null); // <--
+
+    function handleClearSearch() {
+      searchInput.current.value = "edited input element value"; // <--
+      searchInput.current.focus(); // <-- etc. on component
+    }
+
+    return (
+      <form>
+        <input
+          type="text"
+          onChange={(event) => setQuery(event.target.value)}
+          ref={searchInput} {/* <-- */}
+        />
+      </form>
+    );
+  }
+  ```
+
+- `createContext` and `useContext(ContextName)` = to avoid props drilling
+
+  ```jsx
+  const UserContext = createContext(); // <-- note the capitalization = component
+
+  function App() {
+    const [user] = useState({ state: "Fred" });
+    return (
+      <UserContext.Provider value={user}>
+        <Main />
+      </UserContext.Provider>
+    ); // <-- note Provider and value
+  }
+
+  const Main = () => {
+    return (
+      <>
+        <Header />
+        <div>Main app content...</div>
+      </>
+    );
+  };
+
+  const Header = () => {
+    return (
+      <UserContext.Consumer>
+        {(user) => <header>Welcome, {user.name}</header>}
+      </UserContext.Consumer>
+    ); // <-- note Consumer and user comes from Provider value
+  };
+
+  const HeaderAlternatively = () => {
+    const user = useContext(UserContext); // <-- note the UserContext component being passed in
+    return <header>Welcome, {user.name}</header>;
+  };
+  ```
+
+- `useReducer` = for state across app (use useState for local component state)
+
+  - **reducers** can be used with `useReducer` to manage state across app
+  - `useReducer` can be used with `useContext` to manage data and pass data between components easily
+
+  ```jsx
+  function App() {
+    // note: state, dispatch, useReducer, reducer:
+    const [state, dispatch] = useReducer(reducer, initialState); // <--
+
+    function handleLogin() {
+      dispatch({ type: "LOGIN", payload: { username: "Howard" } }); // <-- note: dispatch
+    }
+
+    function handleSignOut() {
+      dispatch({ type: "SIGNOUT" });
+    }
+
+    return (
+      <>
+        Current user {state.username} {/* <-- note: state */}
+        <button onClick={handleLogin}>Login</button>
+        <button onClick={handleSignOut}>Sign out</button>
+        Authenticated: {state.isAuth} {/* <-- note: state */}
+      </>
+    );
+  }
+  ```
