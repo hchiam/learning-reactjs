@@ -198,6 +198,7 @@ Easy solution: <https://github.com/Swizec/useAuth>
 
 - [Jest](https://github.com/hchiam/learning-jest)
 - [Redux](https://github.com/hchiam/learning-redux)
+- [React Router](https://github.com/hchiam/learning-react-router)
 - [React Native](https://github.com/hchiam/learning-react-native)
 - [React + Apollo + GraphQL](https://github.com/hchiam/learning-react-apollo)
 - [React + Firestore](https://github.com/hchiam/learning-firestore)
