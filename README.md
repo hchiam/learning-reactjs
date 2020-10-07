@@ -202,6 +202,7 @@ Easy solution: <https://github.com/Swizec/useAuth>
 - [React Native](https://github.com/hchiam/learning-react-native)
 - [React + Apollo + GraphQL](https://github.com/hchiam/learning-react-apollo)
 - [React + Firestore](https://github.com/hchiam/learning-firestore)
+- [React Hook Form](https://github.com/hchiam/learning-react-hook-form)
 
 ### Further reading on state organization: "The 5 Types Of React Application State"
 
