@@ -1,5 +1,7 @@
 # React hooks
 
+([14-minute YouTube summary](https://www.youtube.com/watch?v=TNhaISOUy6Q))
+
 <https://www.smashingmagazine.com/2020/04/react-hooks-api-guide> + notes from elsewhere
 
 4 Most common:
@@ -28,14 +30,34 @@
 
 ## Others
 
-- `useCallback` = useMemo but for _callback functions_ to not be recreated per re-render
 - `useMemo` = useCallback but for _data_ to not have to repeat evaluation per re-render
+- `useCallback` = useMemo but for _callback functions_ to not be recreated per re-render (e.g.: multiple child components in a list that use the same function object)
 - `useRef` = ref to an element upon mount
 - `createContext` and `useContext(ContextName)` = to avoid props drilling
 - `useReducer` = for state across app (use useState for local component state)
-- `useImperativeHandle`
-- `useLayoutEffect`
-- `useDebugValue`
+- `useImperativeHandle` = (RARELY USED) let a component modify the ref from another component exposed by `useRef`
+- `useLayoutEffect` = (RARELY USED) runs like `useEffect`, except it runs _after_ render but _before_ painting, basically waiting for the callback param to finish before updating the UI for the user (NOTE: blocks visual updates until callback finished), e.g. calculate scroll position before DOM visually updated
+- `useDebugValue` = makes more sense when creating your own custom hooks: lets you define custom labels for hooks in React dev tools
+
+```jsx
+// custom hook:
+function useDisplayName() {
+  const [displayName, setDisplayName] = useState();
+  useEffect(() => {
+    const data = fetchFromDatabase(props.userId);
+    setDisplayName(data.displayName);
+  }, []);
+
+  useDebugValue(displayName ?? "loading..."); // <-- will show up in React dev tools with custom label "DisplayName" (and value and the primitive hooks involved)
+
+  return displayName;
+}
+
+function otherComponents() {
+  const displayName = useDisplayName();
+  return <button>{displayName}</button>;
+}
+```
 
 ## You can also create a custom React hook
 
@@ -89,7 +111,7 @@
   const output = useMemo(() => getFibonacci(inputDep), [inputDep]); // memoize: input -> output
   ```
 
-- `useRef` = ref to an element upon mount
+- `useRef` = can use to ref to an element upon mount (returns a DOM element with DOM API)
 
   ```jsx
   function App() {
