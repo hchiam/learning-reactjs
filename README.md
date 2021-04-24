@@ -2,7 +2,7 @@
 
 Create components in JavaScript using React. Conceptually, [rendering logic and other UI logic are closely coupled](https://reactjs.org/docs/introducing-jsx.html). Composition > inheritance. And top-down data flow (but children can change other children/parent's state by calling shared parent's functions that are passed down to them via immutable props).
 
-Just one of the things I'm learning. https://github.com/hchiam/learning
+Just one of the things I'm learning. <https://github.com/hchiam/learning> and <https://github.com/hchiam/learning-frameworks>
 
 **Update:** You can [create a React web app by running one command](https://github.com/hchiam/create-react-app): `npx create-react-app my-app`. Or you can use Yeoman generators like [this](https://www.npmjs.com/package/generator-create-redux-app) or [this](https://www.npmjs.com/package/generator-rn-toolbox) or try out a [RealWorld spec app](https://github.com/gothinkster/react-redux-realworld-example-app).)
 
