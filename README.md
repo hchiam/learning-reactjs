@@ -12,7 +12,7 @@ Just one of the things I'm learning. <https://github.com/hchiam/learning> and <h
 
 ## NEW NOTES
 
-(To try my examples, `npm install && npm run build` and _then_ open the html files.)
+(To try my examples, `npm install && npm run build` and _then_ open all the html files with `open *.html`.)
 
 <https://reactjs.org/docs/hello-world.html>
 
