@@ -5,3 +5,6 @@ dist
 learning-react-native
 learning-react-apollo
 learning-firestore
+
+# just for this learning repo
+package-lock.json
