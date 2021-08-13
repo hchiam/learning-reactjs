@@ -214,6 +214,10 @@ Easy solution: <https://github.com/Swizec/useAuth>
 4. Session
 5. Location
 
+### More to learn
+
+<https://github.com/hchiam/learning-react-error-boundaries>
+
 <hr>
 
 ## OLD NOTES
