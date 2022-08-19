@@ -214,6 +214,10 @@ Easy solution: <https://github.com/Swizec/useAuth>
 4. Session
 5. Location
 
+### When React Re-renders
+
+Worth a read: <https://www.joshwcomeau.com/react/why-react-re-renders>
+
 ### More to learn
 
 <https://github.com/hchiam/learning-react-error-boundaries>
