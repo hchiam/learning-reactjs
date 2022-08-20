@@ -216,7 +216,7 @@ Easy solution: <https://github.com/Swizec/useAuth>
 
 ### When React Re-renders
 
-Worth a read: <https://www.joshwcomeau.com/react/why-react-re-renders> For a quick summary/reminder, see the interactive graphs, but here are my key take-aways:
+Worth a read: <https://www.joshwcomeau.com/react/why-react-re-renders> but for a quick summary/reminder, see the interactive graphs, but here are my key take-aways:
 
 - [when component re-renders, it re-renders all its children by default](https://www.joshwcomeau.com/react/why-react-re-renders/#:~:text=Here's%20an-,interactive%20graph,-that%20shows%20this),
   - [_even if they aren't actually affected by the change in props:_](https://www.joshwcomeau.com/react/why-react-re-renders/#:~:text=It%20doesn't,er%2C%20not%20quite.)
