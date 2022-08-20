@@ -216,13 +216,11 @@ Easy solution: <https://github.com/Swizec/useAuth>
 
 ### When React Re-renders
 
-Worth a read: <https://www.joshwcomeau.com/react/why-react-re-renders>
+Worth a read: <https://www.joshwcomeau.com/react/why-react-re-renders> For a quick summary/reminder, see the interactive graphs, but here are my key take-aways:
 
-For a quick summary/reminder, see the interactive graphs, but here are my key take-aways:
-
-- when component re-renders, it re-renders all its children by default: https://www.joshwcomeau.com/react/why-react-re-renders/#:~:text=Here's%20an-,interactive%20graph,-that%20shows%20this
-- when component re-renders, it re-renders all its children by default, _even if they aren't actually affected by the change in props:_ https://www.joshwcomeau.com/react/why-react-re-renders/#:~:text=It%20doesn't,er%2C%20not%20quite.
-  - but with `React.memo` you can create pure-components that let you avoid/minimize that (well, certain re-renders) by diffing props instead of creating the entire component to then find diffs in that: https://www.joshwcomeau.com/react/why-react-re-renders/#:~:text=let's%20suppose%20i%20wrap%20both%20bigcountnumber%20and%20decoration%20with%20the%20react.memo%20helper.%20here's%20how%20this%20would%20affect%20the%20re-renders%3A
+- [when component re-renders, it re-renders all its children by default](https://www.joshwcomeau.com/react/why-react-re-renders/#:~:text=Here's%20an-,interactive%20graph,-that%20shows%20this),
+  - [_even if they aren't actually affected by the change in props:_](https://www.joshwcomeau.com/react/why-react-re-renders/#:~:text=It%20doesn't,er%2C%20not%20quite.)
+    - but [with `React.memo` you can create pure-components that let you avoid/minimize that (well, certain re-renders) by diffing props instead of creating the entire component to then find diffs in that](https://www.joshwcomeau.com/react/why-react-re-renders/#:~:text=let's%20suppose%20i%20wrap%20both%20bigcountnumber%20and%20decoration%20with%20the%20react.memo%20helper.%20here's%20how%20this%20would%20affect%20the%20re-renders%3A)
 - "The React team is actively investigating whether it's possible to “auto-memoize” code during the compile step. It's still in the research phase, but early experimentation appears promising." (more info: https://www.youtube.com/watch?v=lGEMwh32soc)
 
 ### More to learn
