@@ -4,7 +4,7 @@ Create components in JavaScript using React. Conceptually, [rendering logic and 
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning> and <https://github.com/hchiam/learning-frameworks>
 
-**Update:** You can [create a React web app by running one command](https://github.com/hchiam/create-react-app): `npx create-react-app my-app`. Or you can use Yeoman generators like [this](https://www.npmjs.com/package/generator-create-redux-app) or [this](https://www.npmjs.com/package/generator-rn-toolbox) or try out a [RealWorld spec app](https://github.com/gothinkster/react-redux-realworld-example-app). Or use [Next.js](https://github.com/hchiam/learning-nextjs).
+**Update:** You can [create a React web app by running one command](https://github.com/hchiam/create-react-app): `npx create-react-app my-app` (Update update: maybe use [nx](https://github.com/hchiam/learning-nx) instead). Or you can use Yeoman generators like [this](https://www.npmjs.com/package/generator-create-redux-app) or [this](https://www.npmjs.com/package/generator-rn-toolbox) or try out a [RealWorld spec app](https://github.com/gothinkster/react-redux-realworld-example-app). Or use [Next.js](https://github.com/hchiam/learning-nextjs).
 
 [2020 React cheatsheet (with code examples)](https://www.freecodecamp.org/news/the-react-cheatsheet-for-2020/)
 
