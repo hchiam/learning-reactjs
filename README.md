@@ -223,6 +223,17 @@ Worth a read: <https://www.joshwcomeau.com/react/why-react-re-renders> but for a
     - but [with `React.memo` you can create pure-components that let you avoid/minimize that (well, certain re-renders) by diffing props instead of creating the entire component to then find diffs in that](https://www.joshwcomeau.com/react/why-react-re-renders/#:~:text=let's%20suppose%20i%20wrap%20both%20bigcountnumber%20and%20decoration%20with%20the%20react.memo%20helper.%20here's%20how%20this%20would%20affect%20the%20re-renders%3A)
     - "The React team is actively investigating whether it's possible to “auto-memoize” code during the compile step. It's still in the research phase, but early experimentation appears promising." (more info: https://www.youtube.com/watch?v=lGEMwh32soc)
 
+### exceptions to camelCasing: `data-...` and ARIA
+
+Examples:
+
+```jsx
+<button
+  data-custom-attribuet="some-value"
+  aria-label="Close dialog"
+>
+```
+
 ### More to learn
 
 <https://github.com/hchiam/learning-react-error-boundaries>
