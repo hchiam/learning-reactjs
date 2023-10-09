@@ -240,6 +240,8 @@ Remember `class` is `className` and `for` is `htmlFor` because JSX will inject J
 
 https://transform.tools/html-to-jsx
 
+JSX looks like a template language, but JSX transpiles to JS and then HTML which then is more dynamic, and doesn't invent a totally different language, and can leverage existing JS.
+
 ### More to learn
 
 <https://github.com/hchiam/learning-react-error-boundaries>
