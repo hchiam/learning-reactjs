@@ -234,6 +234,10 @@ Examples:
 >
 ```
 
+### convert HTML to JSX
+
+https://transform.tools/html-to-jsx
+
 ### More to learn
 
 <https://github.com/hchiam/learning-react-error-boundaries>
