@@ -234,6 +234,8 @@ Examples:
 >
 ```
 
+Remember `class` is `className` and `for` is `htmlFor` because JSX will inject JS into slots!
+
 ### convert HTML to JSX
 
 https://transform.tools/html-to-jsx
