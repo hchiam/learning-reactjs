@@ -1,10 +1,7 @@
-import React, {
-  useEffect,
-  useState,
-} from 'react';
+import React, { useEffect, useState } from 'react';
 
 function App() {
-  const { scrollY } = ScrollWatcher();
+  const { y: scrollY } = useScrollPosition();
   return (
     <>
       <h1>Scroll position:</h1>
@@ -13,23 +10,22 @@ function App() {
   );
 }
 
-function ScrollWatcher(props = {}) {
-  const { callback } = props;
-  const [scrollX, setScrollX] = useState(0);
-  const [scrollY, setScrollY] = useState(0);
-  function handleScroll() {
-    setScrollX(window.scrollX);
-    setScrollY(window.scrollY);
-    if (callback) callback(scrollX, scrollY);
-  }
+function useScrollPosition(props = {}) {
+  const { /* TODO: */ valueRefreshRate } = props;
+  const [position, setPosition] = useState({ x: 0, y: 0 });
   useEffect(() => {
-    window.addEventListener(
-      'scroll',
-      handleScroll
-    );
-  });
+    function handleScroll() {
+      setPosition({ x: window.scrollX, y: window.scrollY });
+    }
 
-  return { scrollX, scrollY };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return position;
 }
 
 export default App;
