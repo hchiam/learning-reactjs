@@ -246,6 +246,8 @@ JSX looks like a template language, but JSX transpiles to JS and then HTML which
 
 <https://github.com/hchiam/learning-react-error-boundaries>
 
+SSR (Server Side Rendering) and React Server Components: https://www.joshwcomeau.com/react/server-components/
+
 <hr>
 
 ## OLD NOTES
