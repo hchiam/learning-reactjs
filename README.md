@@ -324,3 +324,6 @@ SSR (Server Side Rendering) and React Server Components: https://www.joshwcomeau
 ### More miscellaneous notes
 
 - React Scan to get render hints etc to dig into performance sinks: https://www.youtube.com/watch?v=ROKRTZ_xCgo
+- avoid interacting with the DOM directly, and use React's abstraction to let React handle DOM manipulation, cleanup, and optimization for you
+    - (e.g., don't use `querySelector`)
+    - (e.g., replace jQuery way of doing things with React conventions)
