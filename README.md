@@ -10,6 +10,10 @@ Just one of the things I'm learning. <https://github.com/hchiam/learning> and <h
 
 ## OLD NOTES
 
+<details>
+
+<summary>click to expand/collapse</summary>
+
 ### tutorial 0:
 
 http://codepen.io/gaearon/pen/ZpvBNJ
@@ -66,12 +70,18 @@ http://codepen.io/hchiam/pen/rmvGgd
 
 https://codepen.io/search/pens/?q=react&limit=hchiam&show_forks=true
 
+</details>
+
 <hr>
 
 
 <hr>
 
 ## NEW NOTES
+
+<details>
+
+<summary>click to expand/collapse</summary>
 
 (To try my examples, `npm install && npm run build` and _then_ open all the html files with `open *.html`.)
 
@@ -302,6 +312,8 @@ Remember `class` is `className` and `for` is `htmlFor` because JSX will inject J
 https://transform.tools/html-to-jsx
 
 JSX looks like a template language, but JSX transpiles to JS and then HTML which then is more dynamic, and doesn't invent a totally different language, and can leverage existing JS.
+
+</details>
 
 ### More to learn
 
