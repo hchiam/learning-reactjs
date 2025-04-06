@@ -328,3 +328,4 @@ SSR (Server Side Rendering) and React Server Components: https://www.joshwcomeau
     - (e.g., don't use `querySelector`)
     - (e.g., replace jQuery way of doing things with React conventions)
 - React `key` like in `<div key={valueThatChanges} className={styles.animate}>` can be used to make the `div` element re-render, and hence also re-run any animation on it set by class `.animate`
+- React `useEffect` is meant for synchronizing React with something outside of React (e.g. API call).
