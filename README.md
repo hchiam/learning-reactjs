@@ -327,3 +327,4 @@ SSR (Server Side Rendering) and React Server Components: https://www.joshwcomeau
 - avoid interacting with the DOM directly, and use React's abstraction to let React handle DOM manipulation, cleanup, and optimization for you
     - (e.g., don't use `querySelector`)
     - (e.g., replace jQuery way of doing things with React conventions)
+- React `key` like in `<div key={valueThatChanges} className={styles.animate}>` can be used to make the `div` element re-render, and hence also re-run any animation on it set by class `.animate`
