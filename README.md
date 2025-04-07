@@ -329,3 +329,19 @@ SSR (Server Side Rendering) and React Server Components: https://www.joshwcomeau
     - (e.g., replace jQuery way of doing things with React conventions)
 - React `key` like in `<div key={valueThatChanges} className={styles.animate}>` can be used to make the `div` element re-render, and hence also re-run any animation on it set by class `.animate`
 - React `useEffect` is meant for synchronizing React with something outside of React (e.g. API call).
+- [Motion (previously Framer Motion)](https://github.com/motiondivision/motion) has default springy/natural animations
+    - code example:
+      ```js
+      import { motion } from 'framer-motion';
+      function SomeComponent() {
+          return <motion.div
+              animate={{ y: 10 }}
+              initial={false} // set false so it doesn't include enter animation on load
+              transition={{ // not required
+                  type: 'spring', // this is the default, and so i don't really need transition here at all
+                  damping: 25, // i like the spring default, so i don't need this either
+                  stiffness: 200, // i like springy default, so i don't need this either
+              }}
+          />;
+      }
+      ```
