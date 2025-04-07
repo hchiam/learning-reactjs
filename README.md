@@ -345,3 +345,16 @@ SSR (Server Side Rendering) and React Server Components: https://www.joshwcomeau
           />;
       }
       ```
+    - use `as` prop to combine Motion with styled-components:
+      ```js
+      const RedButton = styled.button`
+          color: red;
+      `;
+      <RedButton as={motion.button}>
+      ```
+      or composition by wrapping the `motion.[...]` in a `styled(...)`:
+      ```js
+      const RedButton = styled(motion.button)`
+          color: red;
+      `;
+      ```
