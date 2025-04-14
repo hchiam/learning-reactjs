@@ -358,3 +358,13 @@ SSR (Server Side Rendering) and React Server Components: https://www.joshwcomeau
           color: red;
       `;
       ```
+- when to use Higher-Order-Components (HOCs) vs when to use Hooks in React: https://www.patterns.dev/react/hoc-pattern/
+    - HOCs:
+        - repeated UNcustomized when used by each component
+        - can work standalone
+    - Hooks:
+        - behaviour needs to be customized when used by each component
+        - not spread throughout the app, only a few components use it
+        - it adds many properties to a component
+    - watch out for overriding/colliding prop names! consider merging with something like:
+        - `const style = { margin: '1rem', ...props.style };`
