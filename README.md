@@ -372,6 +372,7 @@ SSR (Server Side Rendering) and React Server Components: https://www.joshwcomeau
         - it adds many properties to a component
     - watch out for overriding/colliding prop names! consider merging with something like:
         - `const style = { margin: '1rem', ...props.style };`
+- hooks > classes: https://www.patterns.dev/react/hooks-pattern/
 - render props pattern: https://www.patterns.dev/react/render-props-pattern/ (see pros and cons section)
     - `props.render(data)` so you can pass HTML as a callback to a component's props, and have it render with its own data
         - with `<ComponentName render={(value) => (<SomethingElse value={value}/>)}/>`
