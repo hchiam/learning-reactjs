@@ -2,6 +2,8 @@
 
 ([14-minute YouTube summary](https://www.youtube.com/watch?v=TNhaISOUy6Q))
 
+hooks > classes: https://www.patterns.dev/react/hooks-pattern/
+
 <https://www.smashingmagazine.com/2020/04/react-hooks-api-guide> + notes from elsewhere
 
 4 Most common:
