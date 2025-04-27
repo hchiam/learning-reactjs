@@ -14,6 +14,17 @@ hooks > classes: https://www.patterns.dev/react/hooks-pattern/
 
    - <https://github.com/hacktivist123/React-Hooks-Project/blob/use-state/src/App.js>
 
+   - note that you can also initialize with a callback function, especially for a complicated calculation for the initial value, **_BUT REMEMBER TO MAKE IT A CALLBACK WITH A RETURN TO AVOID RECALC ON EVERY RENDER_**, i.e.:
+      - DO this:
+        ```jsx
+        const [count, setCount] = useState(() => complicatedThing());
+        ```
+      - do NOT do this _for complicated init calls like `complicatedThing`_:
+        ```jsx
+        const [count, setCount] = useState(complicatedThing());
+        ```
+
+
 2. `useEffect()` = "run stuff when create/update/destroy component" (handles component mounting + updating + un-mounting all in one function)
 
    - remember to set the 2nd parameter as an array (of deps or an empty array) if you want it to run just once upon creating ("mounting") the component, and not whenever the component gets updated ("updating")
