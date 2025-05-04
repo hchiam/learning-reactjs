@@ -379,3 +379,5 @@ SSR (Server Side Rendering) and React Server Components: https://www.joshwcomeau
     - or `props.children(data)`
         - with `<ComponentName>{(value) => (<SomethingElse value={value}/>)}<ComponentName/>`
     - good reusability and able to share data between components without "lifting" state
+- note: `count && <element>` could render `0` if count is 0
+    - so it should instead be: `count > 0 && <element>`
